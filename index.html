@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Regressivo</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="botaoInicio">
+        <h2 onclick="abreModal()">Faça uma Contagem Regressiva!</h2>
+    </div>
+
+    <div class="modal">
+        <label id="label" for="diasInp">Dia(s) restantes: </label>
+        <br>
+        <input type="number" id="diasInp" placeholder="Ex.: 10">
+        <button id="iniciarBtn" onclick="iniciarCronometro()">Iniciar</button>
+    </div>
+
+    <div id="cronometro">
+        <div class="diasContainer">
+            <h1> <span id="dias">00</span></h1>
+            <p>Dias</p>
+        </div>
+        <div class="horasContainer">
+            <h1 id="horas">00</h1>
+            <p> <span>Horas</span></p>
+        </div>
+        <div class="minutosContainer">
+            <h1 id="minutos">00</h1>
+            <p> <span>Minutos</span></p>
+        </div>
+        <div class="segundosContainer">
+            <h1 id="segundos">00</h1>
+            <p> <span>Segundos</span></p>
+        </div>
+    </div>
+
+    <div class="acoes">
+        <button id="pausar">Pausar</button>
+        <button id="continuar">Continuar</button>
+        <form action="index.html">
+            <button class="reiniciar">Reiniciar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
